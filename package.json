@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-web-app6",
+  "version": "1.0.0",
+  "description": "NodejsWebApp6",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "author": {
+    "name": "Nicola Solo"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
